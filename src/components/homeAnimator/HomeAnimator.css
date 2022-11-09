@@ -134,7 +134,7 @@
 
 
 
-@media (min-width: 1900px) {
+@media (max-width: 1900px) {
 
   .home-container .Piclogo {
     position: inherit;
@@ -161,8 +161,8 @@
 
   .home-container .Piclogo .circle {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -178,7 +178,7 @@
   .home-container img {
     position: absolute;
     height: fit-content;
-    width: 300px;
+    width: 180px;
     border-radius: 50%;
     /* Transfrom image form 300x position to 0x position which is said in the keyframes.*/
     transform: translateX(300px);
@@ -190,7 +190,7 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
 
   .home-container .Piclogo {
     position: inherit;

@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header className="z-50" />
-      <main className="main flex mx-auto w-[80%] ">
+      <main className="main flex mx-auto w-[80%] 2xl:w-[1500px] ">
         <LeftNavigator />
         <Main />
         <RightNavigator />

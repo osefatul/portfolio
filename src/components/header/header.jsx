@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <nav className=" h-[98px] sm:h-[102px] flex items-center justify-between w-full z-40">
+    <nav className=" h-[98px] sm:h-[102px] flex items-center justify-between w-full z-40 shadow-2xl">
       <div className="flex items-center justify-between px-12 ">
         <motion.div
           variants={icon}
