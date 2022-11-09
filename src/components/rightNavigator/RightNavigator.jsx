@@ -14,14 +14,14 @@ function RightNavbar() {
   return (
     <div className="scroll-down ">
       <a href="#">
-        <FiTwitter className="icon text-[32px]" />
+        <FiTwitter style={{fontSize:"35px"}} className="icon  " />
       </a>
 
       <a href="#">
-        <TiSocialGithub className="icon text-[32px]" />
+        <TiSocialGithub style={{fontSize:"35px"}} className="icon text-[32px]" />
       </a>
       <a href="#home" className=" text-white ">
-        <BsMouse className="icon text-[32px]" />
+        <BsMouse style={{fontSize:"35px"}} className="icon text-[32px]" />
       </a>
       <hr className="bar bg-[#a8b2d1] w-[1px] h-32 mt-2" />
     </div>

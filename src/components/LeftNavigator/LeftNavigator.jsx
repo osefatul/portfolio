@@ -8,22 +8,24 @@ import { BsArrowDownCircle } from "react-icons/bs";
 function Navbar() {
   return (
     <div className="navigation">
-      <a href="#home">
-        <AiOutlineHome className="icon active-nav" />
+      <a href="#">
+        <AiOutlineHome style={{fontSize:"35px"}} className="icon active-nav" />
       </a>
       <a href="#about">
-        <AiOutlineUser className="icon" />
+        <AiOutlineUser style={{fontSize:"35px"}} className="icon" />
       </a>
       <a href="#members">
-        <TiGroupOutline className="icon" />
+        <TiGroupOutline style={{fontSize:"35px"}} className="icon" />
       </a>
       <a href="#contact">
-        <BiMessageRoundedDots className="icon" />
+        <BiMessageRoundedDots style={{fontSize:"35px"}} className="icon" />
       </a>
       <a href="#footer">
-        <BsArrowDownCircle className="icon" />
+        <BsArrowDownCircle style={{fontSize:"35px"}} className="icon" />
       </a>
-      <hr className="bar sm:flex bg-[#a8b2d1] w-[1px] h-32 mt-2 " />
+      {/* <hr className="bar sm:flex bg-[#a8b2d1] w-[1px] h-56 mt-2 " /> */}
+      <hr className="flex bg-[#a8b2d1] w-[1px] h-56 mt-2 " />
+
     </div>
   );
 }

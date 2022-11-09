@@ -11,7 +11,7 @@ function Main() {
         }, [])
 
 return (
-        <div className='flex flex-col items-center justify-center mx-auto w-[80%] md:w-full overflow-x-hidden overflow-y-hidden'>
+        <div className='flex flex-col items-center justify-center mx-auto w-[80%] md:w-[90%] overflow-x-hidden overflow-y-hidden'>
         
         <div
         className='w-full'
