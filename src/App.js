@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/header";
+import Contact from "./components/contact/contact";
+import LeftNavigator from "./components/LeftNavigator/LeftNavigator";
+import Members from "./components/members/members";
+import Footer from "./components/footer/footer";
+import Feed from "./components/feed/Feed";
+import RightNavigator from "./components/rightNavigator/RightNavigator";
+import { useEffect } from "react";
+import Main from "./components/main/Main";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header className="z-50" />
+      <main className="main flex mx-auto w-[80%] ">
+        <LeftNavigator />
+        <Main />
+        <RightNavigator />
+      </main>
+    </>
   );
 }
-
 export default App;

@@ -1,0 +1,416 @@
+.home-container .Piclogo {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+}
+.home-container .Piclogo .hover-show {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.home-container .Piclogo .hover-show.active {
+  animation: showspin 8s linear 1s infinite;
+}
+
+@keyframes showspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-container .Piclogo .hover-show.active .circle {
+  opacity: 0.9;
+}
+
+
+
+
+.home-container .Piclogo .circle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* background-color: rgb(4, 4, 44); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+.home-container img {
+  position: absolute;
+  height: fit-content;
+  width: 170px;
+  border-radius: 50%;
+  transform: translate(-200px);
+  /* opacity: 1; */
+  animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+
+
+
+@keyframes fade-in {
+  to {
+    transform: translate(0);
+
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+.home-container .Piclogo .hover-show.active .circle:nth-child(1) {
+  background: url(../props/html.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-210%);
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(2) {
+  position: absolute;
+  transform: translateX(150%) translateY(-150%);
+  background: url(../props/css.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(3) {
+  position: absolute;
+  transform: translateX(210%);
+  background: url(../props/js.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(4) {
+  position: absolute;
+  transform: translateX(150%) translateY(150%);
+  background: url(../props/sass.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(5) {
+  position: absolute;
+  transform: translateY(210%);
+  background: url(../props/react.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(6) {
+  position: absolute;
+  transform: translateX(-150%) translateY(150%);
+  background: url(../props/node.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(7) {
+  position: absolute;
+  transform: translateX(-210%);
+  background: url(../props/redux.png);
+  background-size: cover;
+  background-position: center;
+}
+.home-container .Piclogo .hover-show.active .circle:nth-child(8) {
+  position: absolute;
+  transform: translateX(-150%) translateY(-150%);
+  background: url(../props/mu5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+@media (min-width: 1900px) {
+
+  .home-container .Piclogo {
+    position: inherit;
+    height: 220px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .home-container .Piclogo .hover-show {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .home-container .Piclogo .circle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease;
+    opacity: 0.1;
+  }
+
+  .home-container .Piclogo .hover-show.active .circle {
+    opacity: 0.3;
+  }
+
+  .home-container img {
+    position: absolute;
+    height: fit-content;
+    width: 300px;
+    border-radius: 50%;
+    /* Transfrom image form 300x position to 0x position which is said in the keyframes.*/
+    transform: translateX(300px);
+    opacity: 0;/* Opacity in the beginning of the will be 0 then transformed to 1*/
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+  .home-container .Piclogo {
+    position: inherit;
+    height: 220;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .home-container .Piclogo .hover-show {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .home-container .Piclogo .circle {
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    /* background-color: rgb(4, 4, 44); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease;
+    opacity: 0.2;
+  }
+
+  .home-container img {
+    position: absolute;
+    height: fit-content;
+    width: 150px;
+    border-radius: 50%;
+    /* Transfrom image form 300x position to 0x position which is said in the keyframes.*/
+    transform: translateX(300px);
+    opacity: 0;/* Opacity in the beginning of the will be 0 then transformed to 1*/
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+}
+
+  
+
+
+
+
+
+
+@media (max-width: 950px) {
+
+  .home-container .Piclogo {
+    position: inherit;
+    height: 190px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .home-container .Piclogo .hover-show {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+
+  .home-container .Piclogo .circle {
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    /* background-color: rgb(4, 4, 44); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease;
+    opacity: 0.2;
+  }
+
+  .home-container img {
+    position: absolute;
+    height: fit-content;
+    width: 150px;
+    border-radius: 50%;
+    /* Transfrom image form 300x position to 0x position which is said in the keyframes.*/
+    transform: translateX(300px);
+    opacity: 0;/* Opacity in the beginning of the will be 0 then transformed to 1*/
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .home-container .Piclogo {
+    position: inherit;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .home-container .Piclogo .hover-show {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .home-container .Piclogo .circle {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+  }
+
+  .home-container img {
+    position: absolute;
+    height: fit-content;
+    width: 128px;
+    border-radius: 50%;
+    object-fit: fill;
+    transform: translate(-200px);
+    /* opacity: 1; */
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-container .Piclogo {
+    position: inherit;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .home-container .Piclogo .hover-show {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .home-container .Piclogo .circle {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+  }
+
+  .home-container .Piclogo .hover-show.active .circle {
+    opacity: 0.6;
+  }
+
+  .home-container img {
+    position: absolute;
+    height: fit-content;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: fill;
+    transform: translate(-200px);
+    /* opacity: 1; */
+    animation: fade-in 1s ease 1 0.5s forwards;
+  }
+}
