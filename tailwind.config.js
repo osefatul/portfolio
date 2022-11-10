@@ -12,5 +12,9 @@ module.exports = {
       SansPro: ["Source Sans Pro", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    // …
+    require("tailwindcss-hyphens")
+    // …
+  ],
 };
