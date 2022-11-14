@@ -36,7 +36,7 @@ function Feed() {
 
       </div>
 
-      <div className="w-[100%] sm:w-[90%] md:w-[100%] 2xl:w-[80%] boxx flex flex-col-reverse md:flex-row items-center justify-center md:shadow-md  lg:shadow-lg 2xl: shadow-2xl mt-20 border-2 border-green-900  ">
+      <div className="w-[100%] sm:w-[90%] md:w-[100%] 2xl:w-[80%] boxx flex flex-col-reverse md:flex-row items-center justify-center md:shadow-md  lg:shadow-lg 2xl: shadow-2xl mt-20 border-2 border-green-700  ">
 
         
         {/* <motion.div
