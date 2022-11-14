@@ -3,6 +3,7 @@ import HomeAnimator from "../homeAnimator/HomeAnimator";
 import { motion } from "framer-motion";
 import "./feed.css";
 import Intro from "../intro/Intro";
+import img2 from "../props/mypic.png"
 
 
 function Feed() {
@@ -24,19 +25,21 @@ function Feed() {
     <div
 
       id="home"
-      className=" text-white mx-auto md:ml-auto flex flex-col  md:items-center justify-start 2xl:justify-center relative w-[100%] sm:w-[100%] 2xl:w-[100%] h-almost">
+      className=" text-white mx-auto md:ml-auto flex flex-col md:items-center justify-start xl:justify-center relative w-[100%] sm:w-[100%] 2xl:w-[100%] h-almost">
       
-      <div className="absolute hidden md:flex items-center justify-center top-[5%]  md:top-[2%] 2xl:top-[6%] w-[90%]">
+      <div className="absolute hidden md:flex items-center justify-center top-[5%]  md:top-[2%] 2xl:top-[6%] w-[90%] mb-20">
         <hr className="lg:w-[30%]  h-[2px] text-slate-700 bg-slate-800 opacity-30" />
         <h1 className=" mx-[20px] text-slate-800 text-[25px] xl:text-[32px] 2xl:text-[40px]    ">
           WEB DEVELOPER
         </h1>
         <hr className="lg:w-[30%] h-[2px] text-slate-700 bg-slate-800 opacity-30" />
+
       </div>
 
-      <div className="w-[100%] sm:w-[90%] 2xl:w-[80%] boxx flex flex-col md:flex-row items-center justify-center md:shadow-md lg:shadow-lg 2xl: shadow-2xl mt-20 ">
+      <div className="w-[100%] sm:w-[90%] md:w-[100%] 2xl:w-[80%] boxx flex flex-col-reverse md:flex-row items-center justify-center md:shadow-md  lg:shadow-lg 2xl: shadow-2xl mt-20 border-2 border-green-900  ">
 
-        <motion.div
+        
+        {/* <motion.div
           // className="sm:w-[500px] md:w-[600px] lg:w-[750px] "
           className="img pb-11 w-[28%] "
           variants={icon}
@@ -48,10 +51,15 @@ function Feed() {
           }}
         >
           <HomeAnimator />
-        </motion.div>
+        </motion.div> */}
 
-        <div className="about w-[50%]  mt-12 md:ml-20 pb-11 ">
+        <div className="about w-[30%] mt-4 md:mt-14 md:ml-5 lg:ml-10 py-5 sm:py-0   ">
           <Intro />
+        </div>
+
+
+        <div className="imgg h-full md:ml-10 w-full lg:ml-10 rounded-full ">
+          <img className="h-[105%] sm:h-[100%] opacity-80 " src={img2} alt="" />
         </div>
 
       </div>

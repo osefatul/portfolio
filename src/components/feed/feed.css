@@ -1,5 +1,5 @@
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   #home {
     width: 90%;
   }
@@ -8,10 +8,14 @@
 
 @media (min-width: 768px) {
   .about{
-    padding-bottom: 0;    
+    padding-bottom: 0;
+  }
+  .imgg{
+    padding-bottom: 0;
+  
   }
   #home {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -26,6 +30,9 @@
   .about{
     width: 50%;
   }
+  .imgg{
+    width: 70%;
+  }
 }
 
 
@@ -34,7 +41,13 @@
   .about {
     padding-left: 0;
     padding-right: 0;
-    width:80%
+    width:90%
+  }
+
+  .imgg{
+    padding-left: 0;
+    padding-right: 0;
+    width:100%
   }
 }
 

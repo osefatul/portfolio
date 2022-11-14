@@ -3,10 +3,11 @@ import { mainProjects } from '../../projects/projects'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FiGithub } from "react-icons/fi";
-
+import { useNavigate } from "react-router-dom";
 
 
 function Projects() {
+
 
 return (
     <div
@@ -19,7 +20,7 @@ return (
             </p>
 
             <div className='flex items-center justify-start space-x-5 w-[100%]'>
-                <p className='text-[#CCD6F6] font-bold text-[20px] sm:text-[35px] text-[40px] '>
+                <p className='text-[#CCD6F6] font-bold text-[24px] sm:text-[35px] text-[40px] '>
                     Some Things I’ve Built
                 </p>
                 <hr className="none sm:flex lg:w-[30%] h-[2px] text-black bg-slate-800 opacity-30" />
@@ -108,10 +109,14 @@ return (
                                     ${index%2 === 0 ? "md:items-end md:justify-end md:pr-4": "md:items-start md:justify-start md:pl-3"}
                                     `}>
                                         <FiGithub className='cursor-pointer text-[12px] md:text-[15px] duration-300 transition ease-in-out delay-150' />
-                                        <div className='pl-8 animate-pulse flex items-center justify-center space-x-1'>
-                                            <div className='w-3 h-3 bg-red-800 rounded-full'></div>
+
+                                        <a href={project.demoLink}>
+                                        <div className='pl-8 animate-pulse flex items-center justify-center space-x-1 cursor-pointer'
+                                        >
+                                            <div className='w-2 h-2 bg-red-800 rounded-full'></div>
                                             <span className='text-[12px] md:text-[15px]'>Live</span>
                                         </div>
+                                        </a>
                                     </div>
 
                                 </div>
