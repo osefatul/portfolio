@@ -3,8 +3,6 @@ import HomeAnimator from "../homeAnimator/HomeAnimator";
 import { motion } from "framer-motion";
 import "./feed.css";
 import Intro from "../intro/Intro";
-import About from "../about/About";
-
 
 
 function Feed() {

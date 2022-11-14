@@ -11,7 +11,10 @@ function Navbar() {
       <a href="#">
         <AiOutlineHome style={{fontSize:"35px"}} className="icon active-nav" />
       </a>
-      <a href="#about">
+      <a href="#mainProjects">
+        <AiOutlineUser style={{fontSize:"35px"}} className="icon" />
+      </a>
+      <a href="#githubProjects">
         <AiOutlineUser style={{fontSize:"35px"}} className="icon" />
       </a>
       <a href="#members">
