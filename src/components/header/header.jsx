@@ -33,9 +33,6 @@ function Header() {
           }}
         >
           <div className="text-[#808040] text-lg md:text-xl lg:text-xl font-medium cursor-pointer">
-            {/* <h1 className="hoverText font-bold font-comorants 2xl:text-[50px]">
-              S.O
-            </h1> */}
             <Logo className="cursor-pointer" />
           </div>
         </motion.div>
@@ -119,18 +116,5 @@ function Header() {
     </nav>
   );
 }
-// return (
-//   <div id='home' className='container header-container'>
-//   <div id="home" className="">
-//     <h3>
-//       <p>
-//         I<span>'</span>m
-//       </p>
-//       Chrys
-//     </h3>
-//     <h2>Front-End Web Developer</h2>
-//   </div>
-
-// );
 
 export default Header;

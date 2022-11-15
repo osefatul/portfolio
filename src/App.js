@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setData(true);
-    }, 3000);
+    }, 2000);
   }, [])
 
   

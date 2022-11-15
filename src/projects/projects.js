@@ -1,5 +1,14 @@
 
 export const mainProjects = [
+    {
+        img:'/images/stay-travel.jpg',
+        title:"Advanced Travel and Stay Booking System",
+        description: "This is an advanced fullstack web application built upon microservices architecture. T&S system is composed of several advanced features including traditional admin rights. The main functionalities for common users are from reserving rooms to booking flights using our own developed API, and an option to check in online which will promptly grant you access to print flight ticket in the PDF format.",
+        demoLink:"https://stays-travels-system.netlify.app/",
+        githubLink:"https://github.com/osefatul/hotel-reservation-system",
+        techStacks:["React","Node","Express","Recharts", "Stripe", "Framer-motion","MongoDB","MUI", "Tailwind" ]
+
+    },
 
     {
         img:"/images/ticket-system.jpg",
@@ -9,15 +18,7 @@ export const mainProjects = [
         githubLink:"https://github.com/osefatul/ticket-tracker-system-CRM",
         techStacks:["React","Node","Express","Redis", "Tailwind", "Framer-motion","MongoDB","Nodemailer" ]
     },
-    {
-        img:'/images/stay-travel.jpg',
-        title:"Advanced Travel and Stay Booking System",
-        description: "T&S system is composed of several advanced features. This is an advanced web application built upon microservices architecture.",
-        demoLink:"https://stays-travels-system.netlify.app/",
-        githubLink:"https://github.com/osefatul/hotel-reservation-system",
-        techStacks:["React","Node","Express","Recharts", "Stripe", "Framer-motion","MongoDB","MUI", "Tailwind" ]
-
-    },
+    
     {
         img:'/images/amazon-ecommerce.jpg',
         title:"Fullstack Amazon E-commerce System",

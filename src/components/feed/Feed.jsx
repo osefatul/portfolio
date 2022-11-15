@@ -36,9 +36,9 @@ function Feed() {
 
       </div>
 
-      <div className="w-[100%] sm:w-[90%] md:w-[100%] 2xl:w-[80%] boxx flex flex-col-reverse md:flex-row items-center justify-center md:shadow-md  lg:shadow-lg 2xl: shadow-2xl mt-20 border-2 border-green-700  ">
+      <div className="relative w-[100%] sm:w-[90%] md:w-[100%] 2xl:w-[80%] boxx flex flex-col-reverse md:flex-row items-center justify-between md:shadow-md  lg:shadow-lg 2xl: shadow-2xl mt-28 border border-green-800">
 
-        
+        {/* Animation component */}
         {/* <motion.div
           // className="sm:w-[500px] md:w-[600px] lg:w-[750px] "
           className="img pb-11 w-[28%] "
@@ -53,19 +53,31 @@ function Feed() {
           <HomeAnimator />
         </motion.div> */}
 
-        <div className="about w-[30%] mt-4 md:mt-14 md:ml-5 lg:ml-10 py-5 sm:py-0   ">
+
+        {/*THis is our perfect model */}
+        {/* <div className="about w-[30%] mt-4 md:mt-14 md:ml-5 lg:ml-10 py-5 sm:py-0   ">
+          <Intro />
+        </div> */}
+
+        {/* <div className="imgg h-full md:ml-10 w-full lg:ml-10 ">
+          <img className="h-[105%] sm:h-[100%] opacity-50 z-50" src={img2} alt="" />
+        </div> */}
+
+
+
+        {/* Experimental */}
+        <div className="w-[80%] md:w-[40%] md:pl-14 pb-3 sm:pb-1 md:mt-20">
           <Intro />
         </div>
 
 
-        <div className="imgg h-full md:ml-10 w-full lg:ml-10 rounded-full ">
-          <img className="h-[105%] sm:h-[100%] opacity-80 " src={img2} alt="" />
+
+        <div className="relative opacity-80 pr-2 pb-5 sm:pb-0 ">
+          {/* <div className="rounded-full w-72 h-72 absolute bg-black right-[20%] shadow-lg boxx top-8 opacity-20  " /> */}
+          <img className="opacity-60 pt-10" src={img2} alt="" />
         </div>
 
       </div>
-
-
-
 
     </div>
   );

@@ -12,7 +12,7 @@ function Projects() {
 return (
     <div
     id="mainProjects"
-    className=" text-white mx-auto flex flex-col md:items-center justify-start 2xl:justify-center relative w-[100%] sm:w-[90%] md:w-[80%] pt-5 ">
+    className=" text-white mx-auto flex flex-col md:items-center justify-start 2xl:justify-center relative w-[100%] sm:w-[90%] md:w-[80%] pt-10 ">
         
         <div className='flex flex-col items-start justify-start w-[100%]'>
             <p className="text-[#64ffda] text-[8px] sm:text-[10px] lg:text-[14px] xl:text-[16x]">
@@ -44,7 +44,7 @@ return (
                 mainProjects.map((project,index)=>(
                     
 
-                    <div className={`w-full relative flex flex-col items-start justify-start sm:px-5 
+                    <div key={index} className={`w-full relative flex flex-col items-start justify-start sm:px-5 
                     ${index%2 === 0 ? "md:flex-row md:items-start md:justify-start": "md:flex-row-reverse md:justify-start md:items-start"}  `}
                         data-aos={`${index % 2 === 0 ? "fade-right": "fade-left"}`}
                         data-aos-delay="50"
